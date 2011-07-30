@@ -1,0 +1,3 @@
+#!/bin/bash
+
+open /System/Library/CoreServices/Finder.app "$1"

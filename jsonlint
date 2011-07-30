@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl -s -X POST http://www.jsonlint.com/ajax/validate -d json="`cat $1`" -d reformat=no
