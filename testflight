@@ -1,0 +1,6 @@
+#!/bin/bash
+
+file="@$1"
+notes="'$2'"
+
+eval "curl http://testflightapp.com/api/builds.json -F file=$file -F api_token='558c12348b74cb4901bc5ef220f0f957_MTMwODQ1MjAxMS0wOC0xMyAyMToxNjo0Ny4zNjM2MTA' -F team_token='de714d7bd42085fe8640a5aa539b3141_MzA1MjQyMDExLTA5LTI3IDA4OjI2OjAxLjAwNDY2NA' -F notes=$notes -F notify=True -F distribution_lists='Bright Context All'"
