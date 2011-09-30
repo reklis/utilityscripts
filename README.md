@@ -21,6 +21,7 @@
 **octagon** *creates octagon verts*  
 **port-fix** *fixes an individual MacPort*  
 **printip** *lists all inet addresses currently available*  
+**prompt.scpt** *prompts for input using a UI dialog*  
 **pvrtextool** *launches oolong PVRTextTool command line interface via Wine*  
 **slowpipe.sh** *slows network pipe on a given ip address to simulate 3g connectivity*  
 **testflight** *pushes a build to test flight using TESTFLIGHTAPITOKEN, TESTFLIGHTTEAMTOKEN and TESTFLIGHTDISTRIBUTIONLIST environment variables*  
