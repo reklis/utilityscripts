@@ -15,6 +15,7 @@
 **kmz2dae** *converts KMZ file to DAE file*  
 **kmz2pod** *converts KMZ file to POD file*  
 **kmz2pod-all** *converts all KMZ files in a directory to POD file*  
+**label** *opens app plist based on directory name and bumps the version strings*
 **md5sort** *sorts all files in the current directory by md5 checksum to find duplicates*  
 **mediatomb-transcode** *live transcode script used by mediatomb*  
 **mkv2vob** *turns an MKV file into a VOB file*  
