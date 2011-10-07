@@ -26,5 +26,6 @@
 **pvrtextool** *launches oolong PVRTextTool command line interface via Wine*  
 **slowpipe.sh** *slows network pipe on a given ip address to simulate 3g connectivity*  
 **testflight** *pushes a build to test flight using TESTFLIGHTAPITOKEN, TESTFLIGHTTEAMTOKEN and TESTFLIGHTDISTRIBUTIONLIST environment variables*  
+**updatesystem.sh** *updates MacPorts and RubyGems*
 **verts** *creates a polygon of $1 number of points that is $2 in diameter*  
 **wav2caf** *converts a WAV file to a CAFF file LEI16 at 44100*  
