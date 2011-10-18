@@ -3,7 +3,6 @@
 **cisco-decrypt.c** *source to decrypt cisco vpn secret keys*  
 **collada2pod** *turns a collada file into a POD file*  
 **fastpipe.sh** *undoes slowpipe.sh*  
-**finder** *opens a finder window to the passed parameter*  
 **fmdiff** *wrapper script for svn diff command to use apple FileMerge*  
 **fmdiff3** *wrapper script for svn diff3 command to use apple FileMerge*  
 **fmmerge** *wrapper script for svn merge-tool-cmd to use apple FileMerge*  
