@@ -1,0 +1,11 @@
+#!/bin/bash
+echo $@
+
+declare -a input
+output=$1
+input=($@)
+unset input[0]
+
+#echo "Input: ${input[@]}"
+#echo "Output: ${output}"
+java -jar /usr/local/closure/compiler.jar --js ${input[@]} --js_output_file ${output}
