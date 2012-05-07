@@ -1,6 +1,7 @@
 **bin2hex** *dumps a binary file as code friendly hex in Perl, C, C++, Pascal, or Delphi format*  
 **cisco-decrypt** *compiled cisco-decript.c*  
 **cisco-decrypt.c** *source to decrypt cisco vpn secret keys*  
+**closure** *combine and minify js using google closure compiler*
 **collada2pod** *turns a collada file into a POD file*  
 **fastpipe.sh** *undoes slowpipe.sh*  
 **fmdiff** *wrapper script for svn diff command to use apple FileMerge*  
