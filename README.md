@@ -35,7 +35,7 @@ commits all changes using the $1 parameter as the commit message
 commits everything and pushes to svn using the $1 param as commit message
 
 # jsl
-javascript lint*  
+javascript lint
 
 # jsonpretty
 prettyprint json
@@ -51,6 +51,9 @@ converts all KMZ files in a directory to POD file
 
 # label
 opens iOS app plist based on directory name and bumps the version strings
+
+# makehtml5
+converts a source video into 3 popular html5 video formats
 
 # md5sort
 sorts all files in the current directory by md5 checksum to find duplicates
@@ -91,5 +94,3 @@ creates a polygon of $1 number of points that is $2 in diameter
 # wav2caf
 converts a WAV file to a CAFF file LEI16 at 44100
 
-# makehtml5
-converts a source video into 3 popular html5 video formats
