@@ -94,3 +94,5 @@ creates a polygon of $1 number of points that is $2 in diameter
 # wav2caf
 converts a WAV file to a CAFF file LEI16 at 44100
 
+# whatismyip
+prints public ip address
