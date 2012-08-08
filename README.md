@@ -28,6 +28,9 @@ wrapper script for svn merge-tool-cmd to use apple FileMerge
 # fmresolve
 wrapper script for svn resolve command to use apple FileMerge
 
+# genpasswd
+generate a password, takes $1 param for length
+
 # git-ci
 commits all changes using the $1 parameter as the commit message
 
