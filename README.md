@@ -79,6 +79,9 @@ lists all inet addresses currently available
 # prompt.scpt
 prompts for input for $1 applciation using a UI dialog with $2 as a prompt, returns as string
 
+# pslist
+list running processes matching $1 arg as regex
+
 # pvrtextool
 launches oolong PVRTextTool command line interface via Wine
 
