@@ -82,6 +82,9 @@ prompts for input for $1 applciation using a UI dialog with $2 as a prompt, retu
 # pvrtextool
 launches oolong PVRTextTool command line interface via Wine
 
+# selfsignedcert
+Create a self-signed server.crt and server.key acceptable for testing
+
 # slowpipe.sh
 slows network pipe on a given ip address to simulate 3g connectivity
 
