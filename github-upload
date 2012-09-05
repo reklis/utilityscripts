@@ -16,7 +16,7 @@ github_api_root = "https://api.github.com/"
 def parse_args():
 	parser = argparse.ArgumentParser(description='post a file to github as a download')
 	parser.add_argument('--user', dest='user', help='github username', required=True)
-	parser.add_argument('--pass', dest='password', help='the name of the github repo', required=True)
+	parser.add_argument('--pass', dest='password', help='github password', required=True)
 	parser.add_argument('--repo', dest='repo', help='the name of the github repo', required=True)
 	parser.add_argument('--file', dest='filepath', help='path of the local file to upload', required=True)
 	parser.add_argument('--desc', dest='description', help='descriptive text about this file', required=True)
