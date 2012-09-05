@@ -37,6 +37,9 @@ commits all changes using the $1 parameter as the commit message
 # git-pub
 commits everything and pushes to svn using the $1 param as commit message
 
+# github-upload
+uploads files to github+s3 as a download on the downloads tab of a repo
+
 # jsl
 javascript lint
 
