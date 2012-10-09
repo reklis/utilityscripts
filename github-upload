@@ -44,7 +44,9 @@ def add_github_reference(args):
 	filesize = os.path.getsize(fp)
 	
 	mtype, mdetails = mimetypes.guess_type(fp)
-
+	if not mtype:
+	  mtype='application/octet-stream'
+	
 	file_description = {
 		'name': filename,
 		'size': filesize,
