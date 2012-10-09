@@ -15,15 +15,15 @@ github_api_root = "https://api.github.com/"
 
 def parse_args():
 	parser = argparse.ArgumentParser(description='post a file to github as a download')
-	parser.add_argument('--user', dest='user', help='github username', required=True)
+	parser.add_argument('--user', dest='user', help='github username', required=False)
 	parser.add_argument('--pass', dest='password', help='github password', required=False)
 	parser.add_argument('--repo', dest='repo', help='the name of the github repo', required=True)
 	parser.add_argument('--file', dest='filepath', help='path of the local file to upload', required=True)
-	parser.add_argument('--desc', dest='description', help='descriptive text about this file', required=True)
-	parser.add_argument('--owner', dest='owner', help='owner of the github repository', required=True)
-	parser.add_argument('--overwrite', dest='overwrite', help='overwrite if file already exists', required=False)
+	parser.add_argument('--desc', dest='description', help='descriptive text about this file', required=False)
+	parser.add_argument('--owner', dest='owner', help='owner of the github repository', required=False)
+	parser.add_argument('--overwrite', dest='overwrite', action='store_true', help='overwrite if file already exists', required=False)
 	args = parser.parse_args()
-	# print args
+	#print "Command line arguments =",args
 	return args
 
 def make_dl_post_url(owner, repo):
@@ -58,7 +58,7 @@ def add_github_reference(args):
 	
 	for file_in_github in files_in_github:
 	  filename_in_github = file_in_github['name']
-	  if filename_in_github == filename and args.overwrite == '1':
+	  if filename_in_github == filename and args.overwrite == True:
 	    print "Deleting file in github",filename_in_github,"with ID",file_in_github['id']
 	    remove_github_reference(args, file_in_github['id'])
 	github = requests.post(dl_post_url, auth=(args.user, args.password), data=json.dumps(file_description))
@@ -141,8 +141,22 @@ def post_file_to_s3(file_path, gh):
 def main():
 	mimetypes.init()
 	args = parse_args()
+	if not args.user:
+	  args.user=raw_input("Username: ")
+	  if not args.user:
+	    print "Username is required"
+	    sys.exit(1)
 	if not args.password:
 	  args.password=getpass.getpass()
+	  if not args.password:
+	    print "Password is required"
+	    sys.exit(1)
+	if not args.owner:
+	  args.owner=args.user
+	if not args.description:
+	  args.description=""
+	#print "Command line arguments =",args
+	  
 	# step 1: tell github about the file
 	gh = add_github_reference(args)
 
