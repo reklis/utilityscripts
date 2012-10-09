@@ -22,6 +22,7 @@ def parse_args():
 	parser.add_argument('--file', dest='filepath', help='path of the local file to upload', required=True)
 	parser.add_argument('--desc', dest='description', help='descriptive text about this file', required=True)
 	parser.add_argument('--owner', dest='owner', help='owner of the github repository', required=True)
+	parser.add_argument('--overwrite', dest='overwrite', help='overwrite if file already exists', required=False)
 	args = parser.parse_args()
 	# print args
 	return args
@@ -53,8 +54,14 @@ def add_github_reference(args):
 		'description': args.description,
 		'content_type': mtype
 	}
-	# print json.dumps(file_description, indent=2)
-
+	#print "add_github_reference. json.dumps",json.dumps(file_description, indent=2)
+	files_in_github = json.loads(requests.get(dl_post_url, auth=(args.user, args.password)).content)
+	
+	for file_in_github in files_in_github:
+	  filename_in_github = file_in_github['name']
+	  if filename_in_github == filename and args.overwrite == '1':
+	    print "Deleting file in github",filename_in_github,"with ID",file_in_github['id']
+	    remove_github_reference(args, file_in_github['id'])
 	github = requests.post(dl_post_url, auth=(args.user, args.password), data=json.dumps(file_description))
 	resp = github.json
 	# print json.dumps(resp, indent=2)
@@ -123,7 +130,7 @@ def post_file_to_s3(file_path, gh):
 
 
 	except Exception, e:
-		print e
+		print "post_file_to_s3. ERROR:",e
 		file_upload_success = False
 
 	finally:
