@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl "http://freegeoip.net/json/$1" | jsonpretty

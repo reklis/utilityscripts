@@ -31,6 +31,9 @@ wrapper script for svn resolve command to use apple FileMerge
 # genpasswd
 generate a password, takes $1 param for length
 
+# geoip
+reverse lookup an ip address and resolve to a lat/long using freegeoip.net
+
 # git-ci
 commits all changes using the $1 parameter as the commit message
 
