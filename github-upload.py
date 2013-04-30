@@ -1,4 +1,4 @@
-#!/opt/local/bin/python2.7
+#!/usr/bin/env python
 
 
 import json
@@ -41,7 +41,7 @@ def add_github_reference(args):
 	fp = args.filepath
 	filename = os.path.basename(fp)
 	filesize = os.path.getsize(fp)
-	
+
 	mtype, mdetails = mimetypes.guess_type(fp)
 
 	file_description = {
@@ -59,7 +59,7 @@ def add_github_reference(args):
 
 def remove_github_reference(args, dlid):
 	dl_delete_url = make_dl_delete_url(args.owner, args.repo, dlid)
-	
+
 	github = requests.delete(dl_delete_url, auth=(args.user, args.password))
 	delete_ok = (204 == github.status_code)
 	return delete_ok
@@ -97,7 +97,7 @@ def post_file_to_s3(file_path, gh):
 		# print post_fields
 
 		s3 = pycurl.Curl()
-		s3.setopt(pycurl.SSL_VERIFYPEER, 0)   
+		s3.setopt(pycurl.SSL_VERIFYPEER, 0)
 		s3.setopt(pycurl.SSL_VERIFYHOST, 0)
 		s3.setopt(pycurl.POST, 1)
 		s3.setopt(pycurl.URL, str(gh['s3_url']))
@@ -108,7 +108,7 @@ def post_file_to_s3(file_path, gh):
 		s3.setopt(pycurl.WRITEFUNCTION, xml_buffer.write)
 
 		s3.perform()
-		
+
 		file_upload_success = (s3_ok == s3.getinfo(pycurl.HTTP_CODE))
 		xml_payload = minidom.parseString(xml_buffer.getvalue())
 
