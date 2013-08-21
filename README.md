@@ -1,6 +1,12 @@
 # bin2hex
 dumps a binary file as code friendly hex in Perl, C, C++, Pascal, or Delphi format
 
+# bitly-shorten
+batch shorten urls from sys.argv. Uses username and password from environment variables
+
+# bitly-bundle-metrics
+basic metrics given a bitly url bundle.  Uses username and password from environment variables
+
 # cisco-decrypt
 compiled cisco-decript.c
 
