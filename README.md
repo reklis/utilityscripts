@@ -1,11 +1,14 @@
 # bin2hex
 dumps a binary file as code friendly hex in Perl, C, C++, Pascal, or Delphi format
 
+# bitly-bundle-metrics
+basic metrics given a bitly url bundle.  Uses username and password from environment variables
+
 # bitly-shorten
 batch shorten urls from sys.argv. Uses username and password from environment variables
 
-# bitly-bundle-metrics
-basic metrics given a bitly url bundle.  Uses username and password from environment variables
+# cer2pem
+convert a cer key to a pem key using openssl
 
 # cisco-decrypt
 compiled cisco-decript.c
@@ -81,6 +84,10 @@ turns an MKV file into a VOB file
 
 # octagon
 creates octagon verts
+
+# p122pem
+
+convert a p12 key file to a pem file using openssl
 
 # port-fix
 fixes an individual MacPort
