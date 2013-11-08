@@ -1,5 +1,4 @@
-#!/usr/bin/env sh
-
+#!/usr/bin/env bash
 
 p12_file=$1
 pem_file=${p12_file:0:-4}.pem

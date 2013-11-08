@@ -1,3 +1,6 @@
+# apnshandshake
+connect to APNS gateway using openssl to test Apple Push Notifications certificates
+
 # bin2hex
 dumps a binary file as code friendly hex in Perl, C, C++, Pascal, or Delphi format
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 cer_file=$1
 pem_file=${cer_file:0:-4}.pem
