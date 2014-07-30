@@ -116,6 +116,14 @@ slows network pipe on a given ip address to simulate 3g connectivity
 # testflight
 pushes a build to test flight using TESTFLIGHTAPITOKEN, TESTFLIGHTTEAMTOKEN and TESTFLIGHTDISTRIBUTIONLIST environment variables
 
+# unix2gmt.js
+
+print GMT given unix timestamp
+
+# unix2iso.js
+
+print ISO time given unix timestamp
+
 # unix2local.js
 
 print local time given unix timestamp
