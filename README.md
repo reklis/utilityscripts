@@ -116,6 +116,10 @@ slows network pipe on a given ip address to simulate 3g connectivity
 # testflight
 pushes a build to test flight using TESTFLIGHTAPITOKEN, TESTFLIGHTTEAMTOKEN and TESTFLIGHTDISTRIBUTIONLIST environment variables
 
+# unix2local.js
+
+print local time given unix timestamp
+
 # updatesystem.sh
 updates MacPorts and RubyGems
 
