@@ -9,4 +9,4 @@ svn mkdir $svn_parent_dir/trunk -m "$commit_msg"
 svn mkdir $svn_parent_dir/tags -m "$commit_msg"
 svn mkdir $svn_parent_dir/branches -m "$commit_msg"
 
-git svn clone $svn_parent_dir/trunk $local_dir
+echo git svn clone $svn_parent_dir/trunk $local_dir
