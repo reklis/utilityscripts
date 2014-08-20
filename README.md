@@ -85,6 +85,9 @@ live transcode script used by mediatomb
 # mkv2vob
 turns an MKV file into a VOB file
 
+# node-eval
+pipes stdin through a javascript statement
+
 # octagon
 creates octagon verts
 
