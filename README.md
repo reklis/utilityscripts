@@ -25,6 +25,9 @@ combine and minify js using google closure compiler
 # collada2pod
 turns a collada file into a POD file
 
+# colortrans.py
+print terminal and hex color code translation table
+
 # fastpipe.sh
 undoes slowpipe.sh
 
