@@ -149,3 +149,5 @@ creates a polygon of $1 number of points that is $2 in diameter
 # wav2caf.sh
 converts a WAV file to a CAFF file LEI16 at 44100
 
+# xls2txt.py
+convert excel file to tab delimited text file
