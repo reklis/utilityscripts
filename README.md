@@ -31,6 +31,9 @@ print terminal and hex color code translation table
 # dseq.sh
 generate date sequences
 
+# dumbplot.sh
+output plot on the terminal given list of x,y coordinates
+
 # fastpipe.sh
 undoes slowpipe.sh
 
