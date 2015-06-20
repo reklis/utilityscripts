@@ -28,6 +28,9 @@ turns a collada file into a POD file
 # colortrans.py
 print terminal and hex color code translation table
 
+# dseq.sh
+generate date sequences
+
 # fastpipe.sh
 undoes slowpipe.sh
 
