@@ -113,19 +113,19 @@ lists all inet addresses currently available
 # prompt.scpt
 prompts for input for $1 applciation using a UI dialog with $2 as a prompt, returns as string
 
-# pslist
+# pslist.sh
 list running processes matching $1 arg as regex
 
 # pvrtextool
 launches oolong PVRTextTool command line interface via Wine
 
-# selfsignedcert
+# selfsignedcert.sh
 Create a self-signed server.crt and server.key acceptable for testing
 
 # slowpipe.sh
 slows network pipe on a given ip address to simulate 3g connectivity
 
-# testflight
+# testflight.sh
 pushes a build to test flight using TESTFLIGHTAPITOKEN, TESTFLIGHTTEAMTOKEN and TESTFLIGHTDISTRIBUTIONLIST environment variables
 
 # unix2gmt.js
@@ -143,11 +143,9 @@ print local time given unix timestamp
 # updatesystem.sh
 updates MacPorts and RubyGems
 
-# verts
+# verts.rb
 creates a polygon of $1 number of points that is $2 in diameter
 
-# wav2caf
+# wav2caf.sh
 converts a WAV file to a CAFF file LEI16 at 44100
 
-# whatismyip
-prints public ip address
