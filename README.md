@@ -1,3 +1,6 @@
+# 256-color-test.pl
+test if the terminal supports 256 colors
+
 # apnshandshake
 connect to APNS gateway using openssl to test Apple Push Notifications certificates
 
@@ -101,7 +104,6 @@ pipes stdin through a javascript statement
 creates octagon verts
 
 # p122pem
-
 convert a p12 key file to a pem file using openssl
 
 # port-fix
@@ -119,6 +121,9 @@ list running processes matching $1 arg as regex
 # pvrtextool
 launches oolong PVRTextTool command line interface via Wine
 
+# rand2hex.sh
+prints $1 count of random bytes to stdout using openssl
+
 # selfsignedcert.sh
 Create a self-signed server.crt and server.key acceptable for testing
 
@@ -129,15 +134,12 @@ slows network pipe on a given ip address to simulate 3g connectivity
 pushes a build to test flight using TESTFLIGHTAPITOKEN, TESTFLIGHTTEAMTOKEN and TESTFLIGHTDISTRIBUTIONLIST environment variables
 
 # unix2gmt.js
-
 print GMT given unix timestamp
 
 # unix2iso.js
-
 print ISO time given unix timestamp
 
 # unix2local.js
-
 print local time given unix timestamp
 
 # updatesystem.sh
